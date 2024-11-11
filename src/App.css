@@ -1,0 +1,131 @@
+
+
+html, body {
+  height: 100%; /* Make sure the page takes up the full height of the viewport */
+  background-color: #f0f0f0; /* Set the background color for the entire page */
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.upload-section input[type="file"] {
+  display: block;
+  margin: 10px 0;
+  ;
+}
+#file-input {
+  display: none; /* This hides the original file input */
+}
+
+/* Style the custom file button */
+.custom-file-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the custom button */
+.custom-file-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.uploaded-files {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.search-section input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.keywords-section input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.keywords-section button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.keywords-section button:hover {
+  background-color: #45a049;
+}
+
+.results-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.document-result {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.document-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.document-text {
+  white-space: pre-wrap; /* Ensures text wraps properly */
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+.document-text::before {
+  content: "Filtered text:";
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+@media (max-width: 768px) {
+  /* For smaller screens, stack the grid items in one column */
+  .results-section {
+    grid-template-columns: 1fr;
+  }
+}
