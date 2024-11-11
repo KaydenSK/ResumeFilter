@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ResumeFilter/static/css/main.fd3214ac.css",
+    "main.js": "/ResumeFilter/static/js/main.fdeee6c0.js",
+    "index.html": "/ResumeFilter/index.html",
+    "main.fd3214ac.css.map": "/ResumeFilter/static/css/main.fd3214ac.css.map",
+    "main.fdeee6c0.js.map": "/ResumeFilter/static/js/main.fdeee6c0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd3214ac.css",
+    "static/js/main.fdeee6c0.js"
+  ]
+}
